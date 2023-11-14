@@ -1,0 +1,12 @@
+VIDEO GUIDE:
+
+https://www.youtube.com/watch?v=Wn3IPX_ax-0
+
+
+DU ER NÅET TIL: 1:35:56
+
+
+
+GITHUB SOURCE CODE: 
+
+https://github.com/thecodeholic/laravel-file-manager/tree/master
