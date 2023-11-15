@@ -3,7 +3,8 @@
       <Menu as="div" class="relative inline-block text-left">
         <div>
           <MenuButton
-            class="inline-flex w-full justify-center rounded-md bg-indigo-700 px-4 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2"
+            class="inline-flex w-full justify-center rounded-md bg-indigo-700 px-4 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2
+             hover:bg-indigo-500"
           >
           {{ $page.props.auth.user.name }}
             <ChevronDownIcon

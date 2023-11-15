@@ -2,6 +2,8 @@
   import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
   import CreateFolderModal from './CreateFolderModal.vue';
   import {ref} from "vue";
+  import FileUploadMenuItem from "@/Components/app/FileUploadMenuItem.vue";
+  import FolderUploadMenuItem from "@/Components/app/FolderUploadMenuItem.vue";
 
   const createFolderModal = ref(false);
 
@@ -23,7 +25,7 @@
       <Menu as="div" class="relative inline-block text-left w-full">
     
           <MenuButton
-            class="inline-flex w-full justify-center rounded-md bg-indigo-700 px-2 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2"
+            class="inline-flex w-full justify-center rounded-md bg-indigo-700 px-2 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-0 hover:bg-indigo-500"
           >
          Create New
           
@@ -46,25 +48,16 @@
                 <a 
                 href="#" 
                 @click.prevent="showCreateFolderModal" 
-                class="text-gray-700 block px-4 py-2 text-sm">
+                class="text-gray-700 block px-4 py-2 text-sm hover:bg-indigo-500">
                     New folder
                 </a>
         
               </MenuItem>
             </div>
-
             <div class="px-1 py-1">
-              <MenuItem v-slot="{ active }" class="text-white  w-full">
-            <a href="" class="text-gray-700 block px-4 py-2 text-sm">
-                Upload Folder
-            </a>
-              </MenuItem>
-              <MenuItem v-slot="{ active }" class="text-white  w-full">
-                <a href="" class="text-gray-700 block px-4 py-2 text-sm">
-                    Upload Files
-                </a>
-              </MenuItem>
-            </div>
+                    <FileUploadMenuItem />
+                    <FolderUploadMenuItem />
+                </div>
           
           
           </MenuItems>

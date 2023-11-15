@@ -26,7 +26,10 @@ class ParentIdBaseRequest extends FormRequest
 
         $this->parent = File::query()->where('id', $this->input('parent_id'))->first();
 
-        if($this->parent && !$this->parent->isRoot() && $this->parent->isOwnedBy(Auth::id())) {
+            $hasParent = $this->parent;
+            $parentIsNonRootFolderOwnedByMe = !$this->parent->isRoot() && $this->parent->isOwnedBy(Auth::id());
+
+        if($hasParent && !$parentIsNonRootFolderOwnedByMe) {
             
             return false;
         }
