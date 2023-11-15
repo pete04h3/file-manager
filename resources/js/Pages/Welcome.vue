@@ -52,6 +52,7 @@ defineProps({
                         fill="#FF2D20"
                     />
                 </svg>
+        
             </div>
 
             <div class="mt-16">
