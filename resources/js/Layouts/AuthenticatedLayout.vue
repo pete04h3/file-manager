@@ -12,7 +12,7 @@
                 Drop files here to upload
             </template>
             <template v-else>
-                <div class="flex items-center justify-between w-full">
+                <div class="header-wrap flex items-center justify-between w-full">
                     <SearchForm/>
                     <UserSettingsDropdown/>
                 </div>

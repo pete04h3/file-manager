@@ -1,0 +1,43 @@
+::selection {
+    background: #4423fd !important;
+    color: whitesmoke !important;
+}
+
+
+::-moz-selection {
+    background: #4423fd !important;
+    color: whitesmoke !important;
+}
+
+
+.main-wrapper {
+ background: #EBEEF7;   
+}
+
+.btn {
+    padding: 6px 16px;
+    border-radius: 55px;
+    min-width: 100px;
+}
+
+.btn.btn-primary {
+    background: #4423fd;
+    color: whitesmoke;
+}
+
+.btn.btn-secondary {
+    border: 1px solid #4423fd;
+    color: #4423fd;
+}
+
+@media (hover: hover) {
+    .btn.btn-primary:hover {
+        background: #5a40f0;
+    }
+
+    .btn.btn-secondary:hover {
+        border: 1px solid #5a40f0;
+        background: #5a40f0;
+        color: whitesmoke;
+    }
+}

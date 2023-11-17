@@ -8,11 +8,11 @@ import NavLink from '../NavLink.vue';
 
 <template>
     <nav class="bg-white min-w-[200px]">
-
       
 <Link :href="route('myFiles')" class="h-[80px] px-3 flex items-center gap-3">
-    <ApplicationLogo class="block h-9 w-auto fill-current text-gray-800" />
-    File Manager
+    <ApplicationLogo class="block h-12 w-12 fill-current text-gray-800" />
+   
+    <h2 class="text-indigo-700 font-semibold" style="font-size: 22px;">Cloudy</h2>
 </Link>
 <div class="px-3">
         <CreateNewDropdown />
